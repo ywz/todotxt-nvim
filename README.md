@@ -17,6 +17,7 @@ A lightweight `todo.txt` plugin for Neovim, now fully implemented in Lua, with:
 ├── plugin/              # Neovim plugin entrypoint
 ├── stylua.toml          # Lua formatting rules
 ├── tests/               # Headless regression tests
+├── CONTRIBUTORS.md      # Contributors
 ├── LICENSE              # MIT license
 └── README.md            # Project documentation
 ```
@@ -25,11 +26,11 @@ A lightweight `todo.txt` plugin for Neovim, now fully implemented in Lua, with:
 
 ### lazy.nvim
 
-For a local plugin, prefer using `dir` directly:
+Use the GitHub repository directly:
 
 ```lua
 {
-  dir = "/Users/wz/copilot/todotxt-nvim",
+  "ywz/todotxt-nvim",
   name = "todotxt-nvim",
   lazy = false,
   config = function()
@@ -42,7 +43,7 @@ Do not use:
 
 ```lua
 {
-  dir = "/Users/wz/copilot/todotxt-nvim",
+  "ywz/todotxt-nvim",
   name = "todotxt-nvim",
   ft = { "todotxt" },
 }
@@ -221,6 +222,10 @@ stylua .
 ## License
 
 MIT. See [LICENSE](/Users/wz/copilot/todotxt-nvim/LICENSE).
+
+## Contributors
+
+See [CONTRIBUTORS.md](/Users/wz/copilot/todotxt-nvim/CONTRIBUTORS.md).
 
 ## Implementation Notes
 
